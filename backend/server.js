@@ -4,11 +4,27 @@ import cors from "cors";
 import dotenv from "dotenv";
 
 dotenv.config();
+
 const app = express();
 const PORT = process.env.PORT || 5000;
 
 app.use(cors());
 
+// Home route
+app.get("/", (req, res) => {
+  res.json({
+    application: "CryptoPulse Backend API",
+    status: "Running ✅",
+    version: "1.0.0",
+    endpoints: {
+      crypto: "/api/crypto/:symbol",
+      example: "/api/crypto/BTC"
+    },
+    author: "Santosh Shankar"
+  });
+});
+
+// API Route
 app.get("/api/crypto/:symbol", async (req, res) => {
   const symbol = req.params.symbol.toUpperCase();
 
@@ -17,14 +33,18 @@ app.get("/api/crypto/:symbol", async (req, res) => {
       "https://pro-api.coinmarketcap.com/v1/cryptocurrency/quotes/latest",
       {
         params: { symbol: symbol, convert: "USD" },
-        headers: { "X-CMC_PRO_API_KEY": process.env.CMC_API_KEY },
+        headers: {
+          "X-CMC_PRO_API_KEY": process.env.CMC_API_KEY,
+        },
       }
     );
 
     res.json(response.data);
   } catch (err) {
     console.error(err.message);
-    res.status(500).json({ error: "Failed to fetch crypto data" });
+    res.status(500).json({
+      error: "Failed to fetch crypto data",
+    });
   }
 });
 
