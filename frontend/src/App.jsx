@@ -2,6 +2,7 @@ import { useState, useEffect  } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
+const API_URL = import.meta.env.VITE_API_URL;
 
 function App() {
   const [symbol, setSymbol] = useState("");
@@ -13,7 +14,7 @@ function App() {
   const getPrice = () => {
     if (!symbol) return;
 
-    fetch(`http://localhost:5000/api/crypto/${symbol}`)
+    fetch(`${API_URL}/api/crypto/${symbol}`)
       .then((res) => res.json())
       .then((data) => {
         if (data.status && data.status.error_code === 0) {
