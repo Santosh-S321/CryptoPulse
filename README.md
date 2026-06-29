@@ -12,7 +12,7 @@ A modern **full-stack cryptocurrency tracker** built with **React**, **Express.j
 
 ## 🌐 Live Demo
 
-🚀 **Frontend:** [CryptoPulse Live](https://your-vercel-url.vercel.app)
+🚀 **Frontend:** [CryptoPulse Live](https://crypto-pulse-six-amber.vercel.app/)
 
 ⚙️ **Backend API:** [Render API](https://cryptopulse-api-rtg6.onrender.com)
 
