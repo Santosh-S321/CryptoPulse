@@ -1,14 +1,20 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "CryptoPulse Backend API",
+  "type": "module",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
+  "keywords": [
+    "express",
+    "coinmarketcap",
+    "crypto",
+    "api"
+  ],
+  "author": "Santosh Shankar",
+  "license": "MIT",
   "dependencies": {
     "axios": "^1.12.1",
     "cors": "^2.8.5",
