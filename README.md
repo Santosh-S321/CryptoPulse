@@ -1,19 +1,25 @@
 # 🚀 CryptoPulse
 
-A modern cryptocurrency price tracker built using **React**, **Express.js**, and the **CoinMarketCap REST API**. CryptoPulse allows users to search for cryptocurrencies by symbol and instantly view real-time market information such as current price, market capitalization, and 24-hour price changes.
+A modern cryptocurrency price tracker built with **React**, **Express.js**, and the **CoinMarketCap REST API**. CryptoPulse enables users to search for cryptocurrencies by symbol and view real-time market data including price, market capitalization, and 24-hour price changes.
 
 ---
 
-## 📌 Features
+## 📖 About the Project
 
-* 🔍 Search any cryptocurrency using its symbol (BTC, ETH, DOGE, etc.)
-* 📋 Dropdown containing popular cryptocurrencies
-* 💰 Displays live cryptocurrency price in USD
-* 📈 Shows market capitalization
-* 📉 Displays 24-hour percentage price change
-* 🔄 Automatically refreshes data every 30 seconds
-* 🔐 Secure API key management using environment variables
-* 📱 Clean and responsive user interface built with Bootstrap
+CryptoPulse is a full-stack web application that demonstrates REST API integration by fetching live cryptocurrency data from the CoinMarketCap API. The application features a clean and responsive interface, popular cryptocurrency selection, automatic data refresh, and secure API key management using environment variables.
+
+---
+
+## ✨ Features
+
+* 🔍 Search cryptocurrencies by symbol (BTC, ETH, SOL, DOGE, etc.)
+* 📋 Popular cryptocurrency dropdown
+* 💰 Live cryptocurrency price in USD
+* 📊 Market capitalization
+* 📉 24-hour price change
+* 🔄 Auto-refresh every 30 seconds
+* 🔐 Secure API key management using `.env`
+* 📱 Responsive Bootstrap UI
 
 ---
 
@@ -22,8 +28,9 @@ A modern cryptocurrency price tracker built using **React**, **Express.js**, and
 ### Frontend
 
 * React.js
+* Vite
 * Bootstrap 5
-* JavaScript (ES6)
+* JavaScript
 * CSS
 
 ### Backend
@@ -47,18 +54,20 @@ CryptoPulse/
 │
 ├── backend/
 │   ├── server.js
-│   ├── .env
 │   ├── package.json
-│   └── ...
+│   └── .env
 │
 ├── frontend/
 │   ├── public/
 │   ├── src/
-│   │   ├── App.jsx
-│   │   ├── main.jsx
-│   │   └── App.css
 │   ├── package.json
-│   └── ...
+│   └── vite.config.js
+│
+├── screenshots/
+│   ├── Img1.png
+│   ├── Img2.png
+│   ├── Img3.png
+│   └── Img4.png
 │
 └── README.md
 ```
@@ -67,28 +76,21 @@ CryptoPulse/
 
 ## ⚙️ Installation
 
-### 1. Clone the repository
+### Clone the repository
 
 ```bash
-git clone https://github.com/your-username/cryptopulse.git
+git clone https://github.com/Santosh-S321/Cryptopulse.git
+cd Cryptopulse
 ```
 
-```bash
-cd cryptopulse
-```
-
----
-
-### 2. Install Backend Dependencies
+### Install Backend Dependencies
 
 ```bash
 cd backend
 npm install
 ```
 
----
-
-### 3. Install Frontend Dependencies
+### Install Frontend Dependencies
 
 ```bash
 cd ../frontend
@@ -97,36 +99,32 @@ npm install
 
 ---
 
-## 🔑 Configure Environment Variables
+## 🔑 Environment Variables
 
-Create a `.env` file inside the **backend** folder.
+Create a `.env` file inside the `backend` folder.
 
 ```env
 CMC_API_KEY=YOUR_COINMARKETCAP_API_KEY
 ```
 
-You can obtain a free API key by creating an account on the CoinMarketCap Developer Portal.
-
 ---
 
-## ▶️ Running the Project
+## ▶️ Running the Application
 
-### Start Backend
+### Start the backend
 
 ```bash
 cd backend
 npm start
 ```
 
-Backend runs at:
+Backend runs on:
 
 ```
 http://localhost:5000
 ```
 
----
-
-### Start Frontend
+### Start the frontend
 
 ```bash
 cd frontend
@@ -141,17 +139,29 @@ http://localhost:5173
 
 ---
 
-## 📷 Application Preview
+# 📸 Screenshots
 
-The application provides:
+## Home Page
 
-* Cryptocurrency search by symbol
-* Popular coin dropdown
-* Live market data
-* Auto-refresh every 30 seconds
-* Clean Bootstrap-based interface
+![Home](screenshots/Img1.png)
 
-> You can add screenshots inside a `screenshots/` folder and display them here later
+---
+
+## Popular Cryptocurrency Dropdown
+
+![Dropdown](screenshots/Img2.png)
+
+---
+
+## Bitcoin Price
+
+![Bitcoin](screenshots/Img3.png)
+
+---
+
+## Ethereum Price
+
+![Ethereum](screenshots/Img4.png)
 
 ---
 
@@ -167,20 +177,16 @@ Example:
 GET /api/crypto/BTC
 ```
 
-Returns live cryptocurrency data fetched from the CoinMarketCap API.
-
 ---
 
-## 📈 Future Improvements
+## 🚀 Future Enhancements
 
-* Add cryptocurrency charts
-* Search suggestions with autocomplete
-* Historical price trends
-* Dark/Light theme toggle
-* Favorites/Watchlist
-* Multiple currency support (USD, EUR, INR)
-* Loading animations
-* Better error handling
+* 📈 Interactive price charts
+* ⭐ Watchlist feature
+* 🔎 Search autocomplete
+* 🌙 Dark/Light mode
+* 🌍 Multiple currency support
+* 📊 Historical price analysis
 
 ---
 
@@ -188,4 +194,7 @@ Returns live cryptocurrency data fetched from the CoinMarketCap API.
 
 **Santosh S**
 
-Computer Science Engineering Student
+* 🎓 B.E. Computer Science Engineering
+
+GitHub: https://github.com/Santosh-S321
+
