@@ -1,39 +1,68 @@
 # 🚀 CryptoPulse
 
-A modern cryptocurrency price tracker built with **React**, **Express.js**, and the **CoinMarketCap REST API**. CryptoPulse enables users to search for cryptocurrencies by symbol and view real-time market data including price, market capitalization, and 24-hour price changes.
+![React](https://img.shields.io/badge/React-19-61DAFB?logo=react)
+![Vite](https://img.shields.io/badge/Vite-7-646CFF?logo=vite)
+![Express](https://img.shields.io/badge/Express.js-5-000000?logo=express)
+![Node.js](https://img.shields.io/badge/Node.js-24-339933?logo=node.js)
+![REST API](https://img.shields.io/badge/API-CoinMarketCap-blue)
+
+A modern **full-stack cryptocurrency tracker** built with **React**, **Express.js**, and the **CoinMarketCap REST API**. CryptoPulse allows users to search for cryptocurrencies and retrieve real-time market information including current price, market capitalization, and 24-hour price changes.
 
 ---
 
-## 📖 About the Project
+## 🌐 Live Demo
 
-CryptoPulse is a full-stack web application that demonstrates REST API integration by fetching live cryptocurrency data from the CoinMarketCap API. The application features a clean and responsive interface, popular cryptocurrency selection, automatic data refresh, and secure API key management using environment variables.
+🚀 **Frontend:** https://crypto-pulse-six-amber.vercel.app/
+
+⚙️ **Backend API:** https://cryptopulse-api-rtg6.onrender.com
+
+> **Note:** The backend is hosted on Render's free tier. If the application has been idle, the first request may take 30–60 seconds while the backend wakes up.
 
 ---
 
-## ✨ Features
+# 📖 About the Project
 
-* 🔍 Search cryptocurrencies by symbol (BTC, ETH, SOL, DOGE, etc.)
+CryptoPulse is a responsive full-stack web application that demonstrates REST API integration by fetching live cryptocurrency data from the CoinMarketCap API.
+
+The application enables users to:
+
+* Search cryptocurrencies using their symbols.
+* Select popular cryptocurrencies from a dropdown.
+* View live market prices.
+* Monitor market capitalization.
+* Track 24-hour price changes.
+* Automatically refresh market data every 30 seconds.
+
+This project showcases modern frontend development, backend API integration, environment variable management, and cloud deployment.
+
+---
+
+# ✨ Features
+
+* 🔍 Search cryptocurrencies by symbol
 * 📋 Popular cryptocurrency dropdown
-* 💰 Live cryptocurrency price in USD
-* 📊 Market capitalization
-* 📉 24-hour price change
+* 💰 Live cryptocurrency prices
+* 📈 Market capitalization
+* 📉 24-hour price changes
 * 🔄 Auto-refresh every 30 seconds
-* 🔐 Secure API key management using `.env`
-* 📱 Responsive Bootstrap UI
+* ⚡ Fast React + Vite frontend
+* 🔐 Secure API key management using environment variables
+* 📱 Responsive Bootstrap interface
+* ☁️ Deployed on Vercel & Render
 
 ---
 
-## 🛠️ Tech Stack
+# 🛠️ Tech Stack
 
-### Frontend
+## Frontend
 
 * React.js
 * Vite
 * Bootstrap 5
-* JavaScript
-* CSS
+* JavaScript (ES6)
+* CSS3
 
-### Backend
+## Backend
 
 * Node.js
 * Express.js
@@ -41,13 +70,18 @@ CryptoPulse is a full-stack web application that demonstrates REST API integrati
 * CORS
 * Dotenv
 
-### API
+## API
 
 * CoinMarketCap REST API
 
+## Deployment
+
+* Vercel (Frontend)
+* Render (Backend)
+
 ---
 
-## 📂 Project Structure
+# 📂 Project Structure
 
 ```text
 CryptoPulse/
@@ -61,7 +95,8 @@ CryptoPulse/
 │   ├── public/
 │   ├── src/
 │   ├── package.json
-│   └── vite.config.js
+│   ├── vite.config.js
+│   └── .env
 │
 ├── screenshots/
 │   ├── Img1.png
@@ -69,65 +104,66 @@ CryptoPulse/
 │   ├── Img3.png
 │   └── Img4.png
 │
-└── README.md
+├── README.md
+└── .gitignore
 ```
 
 ---
 
-## ⚙️ Installation
+# ⚙️ Installation
 
-### Clone the repository
+## Clone the Repository
 
 ```bash
-git clone https://github.com/Santosh-S321/Cryptopulse.git
-cd Cryptopulse
+git clone https://github.com/Santosh-S321/CryptoPulse.git
+cd CryptoPulse
 ```
 
-### Install Backend Dependencies
+---
+
+## Backend Setup
 
 ```bash
 cd backend
 npm install
 ```
 
-### Install Frontend Dependencies
-
-```bash
-cd ../frontend
-npm install
-```
-
----
-
-## 🔑 Environment Variables
-
-Create a `.env` file inside the `backend` folder.
+Create a `.env` file:
 
 ```env
 CMC_API_KEY=YOUR_COINMARKETCAP_API_KEY
 ```
 
----
-
-## ▶️ Running the Application
-
-### Start the backend
+Start the backend:
 
 ```bash
-cd backend
 npm start
 ```
 
-Backend runs on:
+Backend runs at:
 
 ```
 http://localhost:5000
 ```
 
-### Start the frontend
+---
+
+## Frontend Setup
 
 ```bash
 cd frontend
+npm install
+```
+
+Create a `.env` file:
+
+```env
+VITE_API_URL=http://localhost:5000
+```
+
+Run the frontend:
+
+```bash
 npm run dev
 ```
 
@@ -139,33 +175,33 @@ http://localhost:5173
 
 ---
 
-# 📸 Screenshots
+# 📷 Screenshots
 
-## Home Page
+## 🏠 Home Page
 
 ![Home](screenshots/Img1.png)
 
 ---
 
-## Popular Cryptocurrency Dropdown
+## 📋 Popular Cryptocurrency Dropdown
 
 ![Dropdown](screenshots/Img2.png)
 
 ---
 
-## Bitcoin Price
+## ₿ Bitcoin Information
 
 ![Bitcoin](screenshots/Img3.png)
 
 ---
 
-## Ethereum Price
+## 💎 Ethereum Information
 
 ![Ethereum](screenshots/Img4.png)
 
 ---
 
-## 🔗 API Endpoint
+# 🔗 API Endpoint
 
 ```
 GET /api/crypto/:symbol
@@ -179,22 +215,39 @@ GET /api/crypto/BTC
 
 ---
 
-## 🚀 Future Enhancements
+# 🚀 Future Enhancements
 
 * 📈 Interactive price charts
-* ⭐ Watchlist feature
-* 🔎 Search autocomplete
-* 🌙 Dark/Light mode
-* 🌍 Multiple currency support
-* 📊 Historical price analysis
+* ⭐ Favorite cryptocurrencies
+* 🔍 Search autocomplete
+* 🌙 Dark mode
+* 🌍 Multi-currency support
+* 📊 Historical market data
+* 📱 Progressive Web App (PWA)
+* 📉 Price alerts
 
 ---
 
-## 👨‍💻 Author
+# 📈 Learning Outcomes
+
+Through this project, I gained experience with:
+
+* REST API integration
+* Full-stack application development
+* React Hooks (`useState`, `useEffect`)
+* Express.js backend development
+* Environment variable management
+* HTTP requests using Axios
+* Cloud deployment using Vercel and Render
+* Git and GitHub version control
+
+---
+
+# 👨‍💻 Author
 
 **Santosh S**
 
-* 🎓 B.E. Computer Science Engineering
+🎓 B.E. Computer Science Engineering
 
-GitHub: https://github.com/Santosh-S321
+🔗 GitHub: https://github.com/Santosh-S321
 
