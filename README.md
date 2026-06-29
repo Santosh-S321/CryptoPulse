@@ -12,9 +12,9 @@ A modern **full-stack cryptocurrency tracker** built with **React**, **Express.j
 
 ## 🌐 Live Demo
 
-🚀 **Frontend:** https://crypto-pulse-six-amber.vercel.app/
+🚀 **Frontend:** [CryptoPulse Live](https://your-vercel-url.vercel.app)
 
-⚙️ **Backend API:** https://cryptopulse-api-rtg6.onrender.com
+⚙️ **Backend API:** [Render API](https://cryptopulse-api-rtg6.onrender.com)
 
 > **Note:** The backend is hosted on Render's free tier. If the application has been idle, the first request may take 30–60 seconds while the backend wakes up.
 

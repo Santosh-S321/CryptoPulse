@@ -20,7 +20,7 @@ app.get("/", (req, res) => {
       crypto: "/api/crypto/:symbol",
       example: "/api/crypto/BTC"
     },
-    author: "Santosh Shankar"
+    author: "Santosh S"
   });
 });
 
